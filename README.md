@@ -7,4 +7,4 @@ acerca de la aplicación de OpenCV en estos casos. En la mayoría de tutoriales 
 En el repositorio encontrarás dos archivos ".py" que son los dos casos que se estudian, la detección aplicada a imágenes y
 a vídeo.
 
-[link 1]: 
+[link 1]: https://medium.com/@Lublanc/detecci%C3%B3n-de-objetos-con-opencv-en-python-a0ba95d7705e
