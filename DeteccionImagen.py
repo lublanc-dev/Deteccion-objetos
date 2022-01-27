@@ -14,12 +14,12 @@ frozen_model="frozen_inference_graph.pb"
 model=cv2.dnn_DetectionModel(frozen_model,config_file)
 
 classLabels=[]
-file_name="labels.txt"
+file_name="labels.txt" #nombre del archivo .txt en el que has copiado la base de datos coco.names
 
 with open(file_name,"rt") as fpt:
     classLabels=fpt.read().rstrip("\n").split("\n")
     
-img=cv2.imread("escritorio.jpg")
+img=cv2.imread("TuImagen.png") #recuerda poner la terminación .jpg o .png de tu archivo
 
 model.setInputSize(320,320)
 model.setInputScale(1.0/127.5)
