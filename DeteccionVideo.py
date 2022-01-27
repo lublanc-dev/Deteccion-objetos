@@ -5,15 +5,15 @@ frozen_model="frozen_inference_graph.pb"
 
 model=cv2.dnn_DetectionModel(frozen_model,config_file)
 
-classLabels=[]
-file_name="labels.txt"
-with open(file_name,"rt") as fpt:
-    classLabels=fpt.read().rstrip("\n").split("\n")
-
 model.setInputSize(320,320)
 model.setInputScale(1.0/127.5)
 model.setInputMean((127.5,127.5,127.5))
 model.setInputSwapRB(True)
+
+classLabels=[]
+file_name="labels.txt"
+with open(file_name,"rt") as fpt:
+    classLabels=fpt.read().rstrip("\n").split("\n")
 
 cap=cv2.VideoCapture("TuVideo.MOV") #recueda escribir la terminación del archivo: .MOV, .mp4...
 
