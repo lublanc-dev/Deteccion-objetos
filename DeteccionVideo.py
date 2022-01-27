@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 27 16:26:50 2022
-
-@author: marco
-"""
 import cv2
 
 config_file="ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt"
@@ -21,7 +15,7 @@ model.setInputScale(1.0/127.5)
 model.setInputMean((127.5,127.5,127.5))
 model.setInputSwapRB(True)
 
-cap=cv2.VideoCapture("yo.MOV")
+cap=cv2.VideoCapture("TuVideo.MOV") #recueda escribir la terminación del archivo: .MOV, .mp4...
 
 if not cap.isOpened():
     cap=cv2.VideoCapture(0)
