@@ -6,4 +6,7 @@ acerca de la aplicación de OpenCV en estos casos. En la mayoría de tutoriales 
 o se hacía difícil de seguir en caso de ser nuevo en este ámbito. Por eso mismo, si tú, al igual que yo, te ves con dudas
 déjame que te recomiende esta entrada[link 1] del blog en el que he desarollado un tutorial al respecto.
 
+En el repositorio encontrarás dos archivos ".py" que son los dos casos que se estudian, la detección aplicada a imágenes y
+a vídeo.
+
 [link 1]: 
